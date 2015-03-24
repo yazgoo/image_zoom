@@ -1,0 +1,16 @@
+#image_show {
+    z-index: 1001;
+}
+#image_zoom {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
