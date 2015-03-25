@@ -14,7 +14,7 @@ If you want an image to take a different proportion, you can
 use the data-zoom-height attribute.
 For example:
 
-    <imag src="blah.png" data-zoom-height="300%"/>
+    <img src="blah.png" data-zoom-height="300%"/>
 
 Will be three times longer than the screen in height.
 
