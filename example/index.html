@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Image Zoom plugin for reveal JS</title>
+		<link rel="stylesheet" href="https://rawgit.com/hakimel/reveal.js/master/css/reveal.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section>
+                    <section>
+                        Here is an image (from <a href=https://en.wikipedia.org/wiki/Cat#/media/File:Cat_poster_1.jpg>wikipedia</a>), try and click on it:<br/>
+                        <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1024px-Cat_poster_1.jpg width=40% />
+                    </section>
+			</div>
+		</div>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+		<script src="https://raw.githubusercontent.com/hakimel/reveal.js/master/js/reveal.js"></script>
+		<script>
+Reveal.initialize({
+controls: true,
+dependencies: [ { src: 'plugin/image_zoom/image_zoom.js', async: true }, ],
+});
+        </script>
+	</body>
+</html>
