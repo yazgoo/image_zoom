@@ -3,6 +3,10 @@
 This is a plugin for reveal.js
 It brings images to the front when clicked.
 
+# Demo
+
+[Here is a demo](http://htmlpreview.github.io/?https://raw.githubusercontent.com/yazgoo/image_zoom/example/index.html)
+
 # Zoom proportion
 
 The zoomed images takes 100% of the screen in height by default.
