@@ -1,9 +1,10 @@
 #image_show {
     z-index: 1001;
 }
-#image_zoom {
+.image_zoom_visible {
     z-index: 1000;
-    display: none;
+    transform:translate(0);
+    transition: all 0.5s linear;
     position: fixed;
     background: rgba(0, 0, 0, 0.8);
     top: 0;
@@ -12,5 +13,9 @@
     height: 100%;
     overflow: auto;
     text-align: center;
+}
+.image_zoom_hidden {
+    z-index: -1;
+    opacity: 0;
 }
 
