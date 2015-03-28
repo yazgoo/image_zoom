@@ -5,7 +5,7 @@ It brings images to the front when clicked.
 
 # Demo
 
-[Here is a demo](http://htmlpreview.github.io/?https://raw.githubusercontent.com/yazgoo/image_zoom/master/example/index.html)
+[Here is a demo](http://abdessel.iiens.net/image_zoom/example/)
 
 # Zoom proportion
 
