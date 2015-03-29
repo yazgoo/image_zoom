@@ -19,14 +19,19 @@ function load_html()
 }
 function setup_events_listeners(tags)
 {
-    var hide = function() { tags.image_zoom.setAttribute("class", 'image_zoom_hidden'); };
+    var hide = function() {
+        tags.image_zoom.setAttribute("class", 'image_zoom_hidden');
+        tags.image_show.src = "";
+    };
     var show = function(image) { return function() {
+        var src_zoom = image.getAttribute("data-src-zoom");
+        tags.image_show.src = src_zoom != null ? src_zoom : image.src;
         tags.image_zoom.setAttribute("class", 'image_zoom_visible');
         var zoom_height = image.getAttribute("data-zoom-height");
         tags.image_show.style.height = zoom_height == null ? "100%" : zoom_height;
         tags.image_zoom.style.overflow = zoom_height == null ? "hidden" : "auto";
         tags.image_zoom.scrollTop = 0;
-        tags.image_show.src = image.src; }; };
+    }; };
     Reveal.addEventListener('slidechanged', hide);
     tags.image_zoom.addEventListener('click', hide);
     tags.image_show.addEventListener('click', hide);

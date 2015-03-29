@@ -7,6 +7,11 @@ It brings images to the front when clicked.
 
 [Here is a demo](http://abdessel.iiens.net/image_zoom/example/)
 
+# Different image for zoom
+
+It is possible to specify a different image for the zoomed image,
+   via data-src-zoom attribute
+
 # Zoom proportion
 
 The zoomed images takes 100% of the screen in height by default.

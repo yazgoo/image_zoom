@@ -10,8 +10,17 @@
 			<div class="slides">
                 <section>
                     <section>
-                        Here is an image (from <a href=https://en.wikipedia.org/wiki/Cat#/media/File:Cat_poster_1.jpg>wikipedia</a>), try and click on it:<br/>
+                        Here is an image (from <a href=https://en.wikipedia.org/wiki/Cat#/media/File:Cat_poster_1.jpg>wikipedia</a>),
+                        image_zoom plugin allows to zoom it, just by clicking on it<br/>
                         <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1024px-Cat_poster_1.jpg width=40% />
+                        <br/>
+                        If you want to have two different images (e.g. another one with greater dimension on zoom, use data-src-zoom to specify the zoom image: <br/>
+                        <br/>
+                        <img src=320x240.png data-src-zoom=640x480.png width=30% />
+                        <br/>
+                        Finally, you can use data-zoom-height attribute to specify the height you want for your zoom image (for example here twice the screen):
+                        <br/>
+                        <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1024px-Cat_poster_1.jpg width=15% data-zoom-height=200% />
                     </section>
 			</div>
 		</div>
